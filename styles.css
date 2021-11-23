@@ -86,6 +86,17 @@ body {
   width: 100vw;
 }
 
+.nav-contaniner__list .nav-container__item {
+  padding: 5px 20px;
+  border-radius: 8px;
+  transition: .3s ease-in;
+}
+
+.nav-contaniner__list .nav-container__item:hover {
+  background-color: var(--dark-font-color);
+  color: var(--light-color);
+}
+
 ul {
   list-style-type: none;
 }
@@ -96,6 +107,26 @@ ul {
 }
 
 /* ---- HERO ---- */
+
+.top-btn {
+  position: fixed;
+  top: 90vh;
+  left: 92vw;
+}
+
+.top-btn img {
+  width: 70px;
+}
+
+.contact-btn {
+  position: fixed;
+  top: 90vh;
+  left: 2vw;
+}
+
+.contact-btn img {
+  width: 70px;
+}
 
 .hero-container {
   width: 80vw;
@@ -117,15 +148,37 @@ ul {
   height: 100%;
 }
 
-.right-hero .image-container {
-  padding-top: 180px;
+.right-hero .project-preview-container {
+  padding-top: 280px;
+  text-align: center;
 }
 
-.right-hero .image-container img {
-  width: 518px;
+.project-preview-container h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.project-preview-container .image-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-preview-container .image-container img {
+  border: 1px solid var(--dark-font-color);
+  width: 200px;
+  height: 150px;
   border-radius: 8px;
-  transform: perspective(300px) rotateY(5deg);
-  box-shadow: -12px -8px 12px 1px rgb(24 37 56 / 12%);
+  object-fit: cover;
+  filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+  transition: transform .3s ease;
+  cursor: pointer;
+}
+
+.project-preview-container .image-container img:hover {
+  transform: scale(1.1);
 }
 
 .hero-header .pink-circle {
@@ -184,12 +237,21 @@ ul {
 }
 
 .hero-content .btn-main {
+  font-weight: bold;
   background-color: var(--btn-color);
   padding: 12px 32px;
   color: var(--light-color);
   text-decoration: none;
   border-radius: 6px;
+  border: 2px solid transparent;
+  transition: .2s ease-in;
+}
 
+.hero-content .btn-main:hover {
+  color: var(--dark-font-color);
+  font-weight: bold;
+  background-color: var(--light-color);
+  border: 2px solid var(--dark-font-color);
 }
 
 .hero-content .btn-container {
@@ -227,7 +289,7 @@ ul {
 .knowme-container h3 {
   margin: 0 48px;
   width: 100%;
-  font-size: 48px;
+  font-size: 40px;
   justify-content: left;
 }
 
