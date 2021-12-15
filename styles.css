@@ -220,7 +220,7 @@ ul {
   justify-content: flex-end;
 }
 
-.hero-content .btn-main {
+.btn-main {
   font-weight: bold;
   background-color: var(--btn-color);
   padding: 12px 32px;
@@ -231,7 +231,7 @@ ul {
   transition: .2s ease-in;
 }
 
-.hero-content .btn-main:hover {
+.btn-main:hover {
   color: var(--dark-font-color);
   font-weight: bold;
   background-color: var(--light-color);
@@ -317,4 +317,108 @@ ul {
   justify-content: space-around;
   align-items: center;
   padding: 0 40px;
+}
+
+/* ---- PROJECTS ---- */
+
+.projects-container {
+  width: 1440px;
+  height: 1500px;
+  margin: 40px 10vw;
+  justify-content: center;
+}
+
+.projects-container h3 {
+  margin-left: 165px;
+  margin-bottom: 48px;
+}
+
+.porject-card__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 165px; 
+  gap: 110px;
+}
+
+.porject-card__name {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.porject-card__name span {
+  font-weight: normal;
+}
+
+.porject-card {
+  width: 500px;
+  height: 540px;
+}
+
+.porject-card__image {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+}
+
+.project-card__description {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+
+.project-card__technologies {
+  font-size: 18px;
+  border: 1px solid var(--dark-font-color);
+  border-radius: 5px;
+  width: 290px;
+}
+
+.project-card__technologies p {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.project-card__technologies .iconify {
+  height: 32px;
+  width: 32px;
+  margin: 10px 0 10px 10px;
+}
+
+.porject-card .btn-container {
+  text-align: center;
+  margin-top: 23px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-viewall__container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 165px;
+}
+
+.btn-viewall {
+  margin: 4px 0;
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--dark-font-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-viewall__container .btn-viewall .iconify {
+  height: 32px;
+  width: 32px;
+}
+
+.btn-viewall__container .btn-viewall span {
+  margin-left: 8px;
 }
