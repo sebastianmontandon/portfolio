@@ -422,3 +422,47 @@ ul {
 .btn-viewall__container .btn-viewall span {
   margin-left: 8px;
 }
+
+/* ---- CONTACT ---- */
+
+.contact-container {
+  width: 1440px;
+  height: 740px;
+  margin: 40px 10vw;
+}
+
+.contact-container__content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-container__icons {
+  margin: 20px;
+}
+
+.contact-container__icons p {
+  font-size: 18px;
+  margin: 30px;
+}
+
+.icons {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container__image {
+  margin-left: 10px;
+}
+
+.contact-container__image img {
+  height: 490px;
+  width: 670px;
+  object-fit: cover;
+  border-radius: 10px;
+  transform: rotate(-3deg);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
